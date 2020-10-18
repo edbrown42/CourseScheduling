@@ -1,4 +1,4 @@
-package CourseScheduling.src.main.java.model;
+package model;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -55,7 +55,8 @@ public class ReadInputFile
      * Returns department info
      * @return a department class object
      */
-    public Department getDepartment() {
+    public Department getDepartment()
+    {
         return dept;
     }
 
