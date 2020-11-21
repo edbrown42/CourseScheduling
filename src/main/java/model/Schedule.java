@@ -3,18 +3,32 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
-public class Schedule
+public class Schedule implements Comparable< Schedule >
 {
     private int classAmount = 0;
     private int conflictAmount = 0;
     private double fitness = -1;
     private boolean fitnessChange = true;
+    private Integer id;
 
     private List<PossibleClass> possibleClassList;
-    private List<PossibleClass> filteredPossibleClassList;
+
+    public List<String> getConflicts() {
+        return conflicts;
+    }
+
+    private List<String> conflicts = new ArrayList<>();
     private Department dept;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     Random random = new Random();
 
     /**
@@ -146,16 +160,35 @@ public class Schedule
     private double calcFitness()
     {
         conflictAmount = 0;
+        conflicts.clear();
         for (PossibleClass n  : possibleClassList)
         {
-            if(n.getRoom().getRoomCapacity() < n.getCourse().getMaxEnrollment()) conflictAmount++;
+            n.setHasConflict(false);
+            if(n.getRoom().getRoomCapacity() < n.getCourse().getMaxEnrollment())
+            {
+                conflictAmount++;
+                conflicts.add("Room " + n.getRoom().getRoomNumber() + " does not have enough room for course " + n.getCourse().getCourseId());
+                n.setHasConflict(true);
+            }
             for(PossibleClass m : possibleClassList)
             {
                 // If two classes share a meeting time and are not the same class, check the room number and instructor to see if there are conflicts
-                if(n.getMeetingTime() == m.getMeetingTime() && n.getCourse() != m.getCourse())
+                if(n.getMeetingTime().equals(m.getMeetingTime()) && n.getCourse() != m.getCourse())
                 {
-                    if(n.getRoom() == m.getRoom()) conflictAmount++;
-                    if(n.getProfessor() == m.getProfessor()) conflictAmount++;
+                    if(n.getRoom() == m.getRoom())
+                    {
+                        conflictAmount++;
+                        conflicts.add("During " + n.getMeetingTime() + " two different courses are assigned to room " + n.getRoom());
+                        n.setHasConflict(true);
+                        m.setHasConflict(true);
+                    }
+                    if(n.getProfessor() == m.getProfessor())
+                    {
+                        conflictAmount++;
+                        conflicts.add("During " + n.getMeetingTime() + " Professor " + n.getProfessor() + " is assigned to teach two different courses");
+                        n.setHasConflict(true);
+                        m.setHasConflict(true);
+                    }
                 }
             }
         }
@@ -167,14 +200,19 @@ public class Schedule
      */
     public double getFitness()
     {
-        if(fitnessChange == true)
-        {
-            fitness = calcFitness();
-            fitnessChange = false;
-        }
+        fitness = calcFitness();
         return fitness;
     }
 
+    public boolean isPerfect()
+    {
+        double perfect = 1.0;
+        if(fitness == perfect)
+        {
+            return true;
+        }
+        else return false;
+    }
     /**
      * Gets the list of class combinations that have been made in an example schedule
      * @return
@@ -207,5 +245,26 @@ public class Schedule
          System.out.println("Time:");
          System.out.println(combo.getMeetingTime());
      }
+    }
+
+    public static List getScheduleInfo(Schedule schedule)
+    {
+        List<String> output = new ArrayList<>();
+        for(PossibleClass course : schedule.getClassList())
+        {
+            output.add(" Course: " + course.getCourse().getCourseId()
+                    + " Max Attendance: " + course.getCourse().getMaxEnrollment()
+                    + " Room: " + course.getRoom().getRoomNumber()
+                    + " Room Capacity: " + course.getRoom().getRoomCapacity()
+                    + " Professor: " + course.getProfessor()
+                    + " Meeting Time: " + course.getMeetingTime());
+        }
+        return output;
+    }
+
+    @Override
+    public int compareTo(Schedule o)
+    {
+        return this.getId().compareTo(o.getId());
     }
 }

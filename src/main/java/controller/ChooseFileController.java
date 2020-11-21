@@ -19,12 +19,13 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Department;
 
+import javax.tools.Tool;
+
 @SuppressWarnings("unchecked")
 public class ChooseFileController {
     @FXML private Button clearButton;
     @FXML private AnchorPane anchorPane;
     @FXML private BorderPane borderPane;
-    @FXML private Button selectFileButton;
     @FXML private TextField textField;
     @FXML private Button submitButton;
     @FXML private Button addInputButton;
@@ -34,13 +35,18 @@ public class ChooseFileController {
 
 
     private List<TextField> textFieldList = new ArrayList<>();
-    private ArrayList<String> files = new ArrayList<>();
+    private List<String> files = new ArrayList<>();
     private Stage stage;
+
+
+    public void initialize() {
+        this.addInputButton.setTooltip(new Tooltip("Press this to add a new field for an input file."));
+        this.submitButton.setTooltip(new Tooltip("Pres this to submit all selected files for scheduling."));
+    }
 
     public void setStage(Stage stage)
     {
         this.stage = stage;
-
     }
 
     public void selectFile(ActionEvent actionEvent) {
@@ -58,14 +64,21 @@ public class ChooseFileController {
     }
 
     public void submit(ActionEvent actionEvent) throws IOException {
-        if ( !(textFieldList.isEmpty()) )
-        {
+        Boolean missingFiles = false;
+        for(TextField textField : textFieldList) {
+            if (textField.getText().equals("")) {
+                missingFiles = true;
+                break;
+            }
+        }
+        if (!(textFieldList.isEmpty()) && !missingFiles) {
 
-            for(TextField fileName : textFieldList)
-            {
+            for (TextField fileName : textFieldList) {
                 String filePath = fileName.getText();
-                files.add(filePath);
-                System.out.println(filePath);
+                if (!files.contains(filePath)) {
+                    files.add(filePath);
+                }
+                //System.out.println(filePath);
             }
 
             MainController mainController = MainController.getInstance();
@@ -82,8 +95,11 @@ public class ChooseFileController {
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("Cannot submit before selecting file path.");
+            DialogPane dialogPane = alert.getDialogPane();
+            dialogPane.getStylesheets().add("darktheme.css");
             alert.showAndWait();
         }
+
     }
     public void addInput(ActionEvent actionEvent)
     {
@@ -92,9 +108,18 @@ public class ChooseFileController {
         // Create dynamic components
         Label newLabel = new Label("File Path : ");
         Button newFileButton = new Button("Select File");
+        newFileButton.setTooltip(new Tooltip("Press this to select an input file."));
         Button newClearButton = new Button("Clear");
+        newClearButton.setTooltip(new Tooltip("Press this to clear the file path."));
         Button newRemoveButton = new Button("X");
+        newRemoveButton.setTooltip(new Tooltip("Press this to remove this text field."));
         TextField newTextField = new TextField();
+        newTextField.clear();
+        textFieldList.add(newTextField);
+
+        if (textFieldList.size() == 10) {
+            addInputButton.setDisable(true);
+        }
 
 
         // Set actions of new buttons
@@ -111,7 +136,6 @@ public class ChooseFileController {
                 File file = fileChooser.showOpenDialog(stage);
                 if (file != null) {
                     newTextField.setText(file.getAbsolutePath());
-                    textFieldList.add(newTextField);
                 }
             }
         });
@@ -126,6 +150,7 @@ public class ChooseFileController {
         newRemoveButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                addInputButton.setDisable(false);
                 textFieldList.remove(newTextField);
                 vBoxMid.getChildren().remove(newHBox);
                 resize();
@@ -146,6 +171,20 @@ public class ChooseFileController {
 
         vBoxMid.getChildren().add(newHBox);
         resize();
+    }
+
+    public void initializeTextFields() {
+        MainController mainController = MainController.getInstance();
+        this.files = mainController.getFiles();
+        System.out.println(this.files);
+        for (String file : files) {
+            this.addInputButton.fire();
+            textFieldList.get(textFieldList.size() - 1).setText(file);
+        }
+    }
+
+    private List<String> getFiles() {
+        return this.files;
     }
 
     public void resize()

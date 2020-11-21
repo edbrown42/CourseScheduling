@@ -1,20 +1,22 @@
 package controller;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import model.*;
-
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
+
 
 public class FinalizeInputController
 {
@@ -33,10 +35,15 @@ public class FinalizeInputController
     @FXML public Button roomEdit;
     @FXML public Button roomDelete;
     @FXML private Button submit;
+    @FXML private Button backButton;
+
+
+
     private List<Department> departments;
     private List<Room> roomList;
     private List<Course> courseList;
     private List<Professor> professorList;
+    private ArrayList<String> files;
 
     public FinalizeInputController() {
 
@@ -48,6 +55,26 @@ public class FinalizeInputController
     }
 
     public void initialize(List<Department> departments) {
+        submit.setTooltip(new Tooltip("Submit department info and generate schedules."));
+        backButton.setTooltip(new Tooltip("Go back to choose input files for generating schedules."));
+
+        departmentComboBox.setTooltip(new Tooltip("Contains a list of all the departments."));
+        roomComboBox.setTooltip(new Tooltip("Contains a list of all the rooms for the selected department."));
+        professorComboBox.setTooltip(new Tooltip("Contains a list of all the professors for the selected department."));
+        courseComboBox.setTooltip(new Tooltip("Contains a list of all the courses for the selected department."));
+
+        courseAdd.setTooltip(new Tooltip("Press this to add a new course to this department."));
+        courseEdit.setTooltip(new Tooltip("Press this to edit the currently selected course."));
+        courseDelete.setTooltip(new Tooltip("Press this to delete the currently selected course."));
+
+        professorAdd.setTooltip(new Tooltip("Press this to add a new professor to this department."));
+        professorEdit.setTooltip(new Tooltip("Press this to edit the currently selected professor."));
+        professorDelete.setTooltip(new Tooltip("Press this to delete the currently selected professor."));
+
+        roomAdd.setTooltip(new Tooltip("Press this to add a new room to this department."));
+        roomEdit.setTooltip(new Tooltip("Press this to edit the currently selected room."));
+        roomDelete.setTooltip(new Tooltip("Press this to delete the currently selected room."));
+
         this.departments = departments;
         this.departmentComboBox.setItems(FXCollections.observableArrayList(this.departments));
         this.setCombosDisable(true);
@@ -274,11 +301,80 @@ public class FinalizeInputController
         }
     }
 
-    public void submit(ActionEvent actionEvent) {
+    public void submit(ActionEvent actionEvent) throws IOException {
         for (Department department : departments) {
-            department.printDepartmentInfo();
+            if (department.getCoursesList().isEmpty()) {
+
+                String headerText = department.getDepartmentName() + " department has no courses.";
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(headerText);
+                DialogPane dialogPane = alert.getDialogPane();
+                dialogPane.getStylesheets().add("darktheme.css");
+                alert.showAndWait();
+                return;
+
+            }
+
+            if (department.getProfessorList().isEmpty()) {
+
+                String headerText = department.getDepartmentName() + " department has no professors.";
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(headerText);
+                DialogPane dialogPane = alert.getDialogPane();
+                dialogPane.getStylesheets().add("darktheme.css");
+                alert.showAndWait();
+                return;
+
+            }
+
+            if (department.getRoomsList().isEmpty()) {
+
+                String headerText = department.getDepartmentName() + " department has no rooms.";
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(headerText);
+                DialogPane dialogPane = alert.getDialogPane();
+                dialogPane.getStylesheets().add("darktheme.css");
+                alert.showAndWait();
+                return;
+
+            }
+        }
+
+
+        MainController mainController = MainController.getInstance();
+        mainController.initializePopulation(departments);
+
+        List<Schedule> scheduleList = mainController.getScheduleList();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/OutputSchedule.fxml"));
+        Parent pane = (Parent) fxmlLoader.load();
+        ((OutputScheduleController) fxmlLoader.getController()).setStage(stage);
+        ((OutputScheduleController) fxmlLoader.getController()).initialize(departments, scheduleList);
+        Scene scene = new Scene(pane);
+        stage.setScene(scene);
+        resize();
+    }
+
+    public void back(ActionEvent actionEvent) throws IOException {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure want to go back? Doing so will " +
+                "lose all progress.", ButtonType.YES, ButtonType.NO);
+        DialogPane dialogPane = alert.getDialogPane();
+        dialogPane.getStylesheets().add("darktheme.css");
+        alert.showAndWait();
+
+        if (alert.getResult() == ButtonType.YES) {
+            MainController mainController = MainController.getInstance();
+            mainController.getData().clear();
+            departments.clear();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ChooseFile.fxml"));
+            Parent pane = (Parent) fxmlLoader.load();
+            ((ChooseFileController) fxmlLoader.getController()).setStage(stage);
+            ((ChooseFileController) fxmlLoader.getController()).initializeTextFields();
+            Scene scene = new Scene(pane);
+            stage.setScene(scene);
+            resize();
         }
     }
+
 
     public void setCourseComboBoxItems(ObservableList<Course> courseList) {
         this.courseComboBox.setItems(courseList);
@@ -291,5 +387,12 @@ public class FinalizeInputController
     public void setRoomComboBoxItems(ObservableList<Room> roomList) {
         this.roomComboBox.setItems(roomList);
     }
+
+    public void resize()
+    {
+        this.stage.sizeToScene();
+    }
+
+
 
 }
