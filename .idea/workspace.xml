@@ -30,64 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e77c9eb8-88da-4a0e-87f2-6e0d63586b54" name="Default Changelist" comment="Adds ChooseFile GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EditCourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EditProfessorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EditRoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EditCourse.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EditProfessor.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EditRoom.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ChooseFileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/FinalizeInputController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/FinalizeInputController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Algorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ChooseFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ChooseFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ClassTimes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ClassTimes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Population.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/PossibleClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/PossibleClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Professor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ReadClassRooms.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ReadClassRooms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ReadCourses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ReadInputFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ReadInputFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/FinalizeInput.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/FinalizeInput.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ChooseFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ChooseFileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FinalizeInputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/FinalizeInputController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Algorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ChooseFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ChooseFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ChooseFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ChooseFileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClassTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClassTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Population.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PossibleClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PossibleClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ReadClassRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ReadClassRooms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ReadClassTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ReadClassTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ReadCourses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ReadInputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ReadInputFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FinalizeInput.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FinalizeInput.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +115,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43448275" />
