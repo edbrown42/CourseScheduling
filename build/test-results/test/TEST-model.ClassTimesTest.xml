@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.ClassTimesTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-11-29T00:42:47" hostname="DESKTOP-22H3UDI" time="0.013">
+  <properties/>
+  <testcase name="getDay()" classname="model.ClassTimesTest" time="0.005"/>
+  <testcase name="addTime()" classname="model.ClassTimesTest" time="0.001"/>
+  <testcase name="setDay()" classname="model.ClassTimesTest" time="0.001"/>
+  <testcase name="getRandomTime()" classname="model.ClassTimesTest" time="0.001"/>
+  <testcase name="setRandomTime()" classname="model.ClassTimesTest" time="0.001"/>
+  <testcase name="setTimes()" classname="model.ClassTimesTest" time="0.001"/>
+  <testcase name="getTimes()" classname="model.ClassTimesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

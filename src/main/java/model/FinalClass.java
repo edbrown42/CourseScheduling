@@ -19,11 +19,108 @@ public class FinalClass implements Comparable<FinalClass> {
     private String day; //String representing the class days
 
     /**
-     * Constructor
+     * Default Constructor
      */
-    public FinalClass(){
+    public FinalClass(){ }
 
+    /**
+     * Overload class constructor
+     * @param courseNumber //String representing the course number
+     */
+    public FinalClass(String courseNumber){
+        this.courseID = courseNumber;
     }
+
+    /**
+     * Overload constructor
+     * @param courseNumber String representing the course number
+     * @param maxEnrollment String for the max enrollment amount in the course
+     */
+    public FinalClass(String courseNumber, String maxEnrollment){
+        this.courseID = courseNumber;
+        this.max = maxEnrollment;
+    }
+
+    /**
+     * Overload constructor
+     * @param courseNumber String representing the course number
+     * @param maxEnrollment String for the max enrollment amount in the course
+     * @param room String representing room number
+     */
+    public FinalClass(String courseNumber, String maxEnrollment, String room){
+        this.courseID = courseNumber;
+        this.max = maxEnrollment;
+        this.room = room;
+    }
+
+    /**
+     * Overload constructor
+     * @param courseNumber String representing the course number
+     * @param maxEnrollment String for the max enrollment amount in the course
+     * @param room String representing room number
+     * @param professor String representing the professor
+     */
+    public FinalClass(String courseNumber, String maxEnrollment, String room, String professor){
+        this.courseID = courseNumber;
+        this.max = maxEnrollment;
+        this.room = room;
+        this.prof = professor;
+    }
+
+    /**
+     * Overload constructor
+     * @param courseNumber String representing the course number
+     * @param maxEnrollment String for the max enrollment amount in the course
+     * @param room String representing room number
+     * @param professor String representing the professor
+     * @param time String representing the class time
+     */
+    public FinalClass(String courseNumber, String maxEnrollment, String room, String professor, String time){
+        this.courseID = courseNumber;
+        this.max = maxEnrollment;
+        this.room = room;
+        this.prof = professor;
+        this.time = time;
+    }
+
+    /**
+     * Overload constructor
+     * @param courseNumber String representing the course number
+     * @param maxEnrollment String for the max enrollment amount in the course
+     * @param room String representing room number
+     * @param professor String representing the professor
+     * @param time String representing the class time
+     * @param day String representing the class days
+     */
+    public FinalClass(String courseNumber, String maxEnrollment, String room, String professor, String time, String day){
+        this.courseID = courseNumber;
+        this.max = maxEnrollment;
+        this.room = room;
+        this.prof = professor;
+        this.time = time;
+        this.day = day;
+    }
+
+    /**
+     * Overload constructor
+     * @param courseNumber String representing the course number
+     * @param maxEnrollment String for the max enrollment amount in the course
+     * @param room String representing room number
+     * @param professor String representing the professor
+     * @param time String representing the class time
+     * @param day String representing the class days
+     * @param roomCap String representing room capacity
+     */
+    public FinalClass(String courseNumber, String maxEnrollment, String room, String professor, String time, String day, String roomCap){
+        this.courseID = courseNumber;
+        this.max = maxEnrollment;
+        this.room = room;
+        this.prof = professor;
+        this.time = time;
+        this.day = day;
+        this.roomCap = roomCap;
+    }
+
     /**
      * Getter for the course number
      * @return String representing the course number
@@ -71,8 +168,6 @@ public class FinalClass implements Comparable<FinalClass> {
     public void setRoom(String room) {
         this.room = room;
     }
-
-
 
     /**
      * Getter for professor teaching the course

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.DepartmentTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-11-29T00:42:47" hostname="DESKTOP-22H3UDI" time="0.024">
+  <properties/>
+  <testcase name="setDepartmentName()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="getDepartmentLocation()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="getRoomsList()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="setProfessorsList()" classname="model.DepartmentTest" time="0.002"/>
+  <testcase name="getCoursesList()" classname="model.DepartmentTest" time="0.004"/>
+  <testcase name="getDepartmentName()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="getMeetingTimes()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="getProfessorList()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="setRoomsList()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="setMeetingTimes()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="setDepartmentLocation()" classname="model.DepartmentTest" time="0.001"/>
+  <testcase name="setCoursesList()" classname="model.DepartmentTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

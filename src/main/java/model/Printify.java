@@ -19,13 +19,13 @@ public class Printify {
     /**
      * Class constructor.
      * After creating the class only need to call the getter for printData to
-     * recieve the print friendly version
+     * receive the print friendly version
      * @param inData String of data to transform
      * @param dept String of department name
      */
     public Printify(String inData, String dept){
         this.origData = inData;
-        this.department = "Computer Science";
+        this.department = dept;
         collect(); //parse data
         Collections.sort(courses); //sort data
         mutate(); //change data
