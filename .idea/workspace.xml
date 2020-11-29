@@ -30,7 +30,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e77c9eb8-88da-4a0e-87f2-6e0d63586b54" name="Default Changelist" comment="Adds ChooseFile GUI">
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/FinalClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/InputData.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/ReadInputFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -41,31 +44,31 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ClassTimes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ClassTimes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/TestReadInputFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.TestReadInputFile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/ReadInputFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/ReadInputFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CourseScheduling/src/test/java/TestApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.AlgorithmTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ClassTimesTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.CourseTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.DepartmentTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.FinalClassTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ProfessorTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.RoomTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ScheduleTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.TestReadInputFile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.AlgorithmTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ClassTimesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.CourseTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.DepartmentTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.FinalClassTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ProfessorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.RoomTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ScheduleTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClassTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClassTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/FinalClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FinalClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Printify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Printify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/TestReadInputFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ReadInputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ReadInputFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +153,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
@@ -157,44 +161,31 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43448275" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="Csv.Editor.Settings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adgeh\IdeaProjects\CourseScheduling\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\YoussefSleiman\IdeaProjects\CourseScheduling\src\main\resources" />
       <recent name="C:\Users\YoussefSleiman\IdeaProjects\CourseScheduling\src\main\java" />
       <recent name="C:\Users\adgeh\IdeaProjects\CourseScheduling\src\main\java" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\adgeh\IdeaProjects\CourseScheduling\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.Application" />
-      <module name="CourseScheduler.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DepartmentTest.setMeetingTimes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ReadInputFileTest">
+    <configuration name="ReadInputFileTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;model.DepartmentTest.setMeetingTimes&quot;" />
+        <option name="scriptParameters" value="--tests &quot;model.ReadInputFileTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -208,12 +199,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ProfessorTest.addCourse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReadInputFileTest.compareClassTimes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;model.ProfessorTest.addCourse&quot;" />
+        <option name="scriptParameters" value="--tests &quot;model.ReadInputFileTest.compareClassTimes&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -227,12 +218,31 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ProfessorTest.getTaughtCourses" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReadInputFileTest.compareClassrooms" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;model.ProfessorTest.getTaughtCourses&quot;" />
+        <option name="scriptParameters" value="--tests &quot;model.ReadInputFileTest.compareClassrooms&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReadInputFileTest.compareFaculty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;model.ReadInputFileTest.compareFaculty&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -266,19 +276,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.DepartmentTest.setMeetingTimes" />
+      <item itemvalue="Gradle.ReadInputFileTest" />
+      <item itemvalue="Gradle.ReadInputFileTest.compareFaculty" />
+      <item itemvalue="Gradle.ReadInputFileTest.compareClassTimes" />
+      <item itemvalue="Gradle.ReadInputFileTest.compareClassrooms" />
       <item itemvalue="Gradle.Tests in 'CourseScheduler.test'" />
-      <item itemvalue="Gradle.ProfessorTest.getTaughtCourses" />
-      <item itemvalue="Gradle.ProfessorTest.addCourse" />
-      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Gradle.ReadInputFileTest" />
         <item itemvalue="Gradle.Tests in 'CourseScheduler.test'" />
-        <item itemvalue="Gradle.ProfessorTest.addCourse" />
-        <item itemvalue="Gradle.ProfessorTest.getTaughtCourses" />
-        <item itemvalue="Gradle.DepartmentTest.setMeetingTimes" />
+        <item itemvalue="Gradle.ReadInputFileTest.compareClassrooms" />
+        <item itemvalue="Gradle.ReadInputFileTest.compareClassTimes" />
+        <item itemvalue="Gradle.ReadInputFileTest.compareFaculty" />
       </list>
     </recent_temporary>
   </component>
@@ -326,6 +336,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600798537363" />
+    <state x="710" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606614386825">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="710" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606614386825" />
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1600654287262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -363,38 +377,38 @@
     </state>
     <state x="-1482" y="249" key="FileChooserDialogImpl/0.0.1920.1040/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1601421392591" />
     <state x="1011" y="233" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600752263667" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1606610565520">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1606622274254">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599025029357" />
     <state width="2005" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1601172545044" />
     <state width="1877" height="437" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1603070936117" />
     <state width="1877" height="114" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602203027199" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606610565520" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1606610565520">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606622274254" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1606622274254">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599025029357" />
     <state width="2005" height="247" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1601172545043" />
     <state width="1877" height="437" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1603070936117" />
     <state width="1877" height="114" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602203027199" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606610565520" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1606610565520">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606622274254" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1606622274254">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599025029357" />
     <state width="2005" height="247" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1601172545043" />
     <state width="1877" height="437" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1603070936117" />
     <state width="1877" height="114" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602203027199" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606610565520" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1606610565520">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606622274254" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1606622274254">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599025029357" />
     <state width="2005" height="247" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1601172545044" />
     <state width="1877" height="437" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1603070936117" />
     <state width="1877" height="114" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602203027199" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606610565520" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606622274254" />
     <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1606086265842">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -423,12 +437,13 @@
     <state width="1877" height="357" key="GridCell.Tab.1.right/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1603070934223" />
     <state width="914" height="136" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602041828071" />
     <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606086265842" />
-    <state x="541" y="330" key="SettingsEditor" timestamp="1601508025006">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="531" y="188" key="SettingsEditor" timestamp="1606615025449">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-2068" y="176" key="SettingsEditor/0.0.1920.1040/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1599944789043" />
     <state x="541" y="330" key="SettingsEditor/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1601508025006" />
     <state x="565" y="281" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600799357784" />
+    <state x="531" y="188" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606615025449" />
     <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1601836864937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -439,10 +454,10 @@
     </state>
     <state x="644" y="390" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1040/-2560.0.2048.1112@0.0.1920.1040" timestamp="1601507975476" />
     <state x="644" y="390" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600799278819" />
-    <state x="724" y="224" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606017262210">
+    <state x="1221" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606614452854">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="724" y="224" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606017262210" />
+    <state x="1221" y="163" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1606614452854" />
     <state x="505" y="256" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601843739040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

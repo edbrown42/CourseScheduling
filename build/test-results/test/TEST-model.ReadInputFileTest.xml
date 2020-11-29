@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.ReadInputFileTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-29T17:46:34" hostname="DESKTOP-22H3UDI" time="0.115">
+  <properties/>
+  <testcase name="compareFaculty()" classname="model.ReadInputFileTest" time="0.018"/>
+  <testcase name="displayTSVdata()" classname="model.ReadInputFileTest" time="0.042"/>
+  <testcase name="compareClassTimes()" classname="model.ReadInputFileTest" time="0.001"/>
+  <testcase name="compareDeptValues()" classname="model.ReadInputFileTest" time="0.002"/>
+  <testcase name="compareClassrooms()" classname="model.ReadInputFileTest" time="0.002"/>
+  <testcase name="compareCourses()" classname="model.ReadInputFileTest" time="0.002"/>
+  <testcase name="displayCSVdata()" classname="model.ReadInputFileTest" time="0.008"/>
+  <testcase name="compareLocValues()" classname="model.ReadInputFileTest" time="0.001"/>
+  <system-out><![CDATA[---------------------------
+Showing TSV information
+---------------------------
+Department: Computer Science
+Location: Technology Hall
+Courses:
+	CS 104: No Room Preference. Max enrollment of 30
+	CS 120: No Room Preference. Max enrollment of 30
+	CS 137: No Room Preference. Max enrollment of 20
+	CS 143: No Room Preference. Max enrollment of 25
+	CS 144: No Room Preference. Max enrollment of 60
+	CS 149: prefers room 133. Max enrollment of 30
+	CS 166: No Room Preference. Max enrollment of 30
+	CS 178: No Room Preference. Max enrollment of 30
+	CS 203: No Room Preference. Max enrollment of 30
+	CS 218: No Room Preference. Max enrollment of 30
+	CS 219: No Room Preference. Max enrollment of 30
+	CS 233: No Room Preference. Max enrollment of 30
+	CS 236: No Room Preference. Max enrollment of 30
+	CS 241: No Room Preference. Max enrollment of 30
+	CS 280: No Room Preference. Max enrollment of 30
+	CS 284: No Room Preference. Max enrollment of 30
+	CS 300: No Room Preference. Max enrollment of 30
+	CS 307: No Room Preference. Max enrollment of 30
+	CS 311: No Room Preference. Max enrollment of 30
+	CS 317: No Room Preference. Max enrollment of 30
+	CS 318: No Room Preference. Max enrollment of 30
+	CS 326: No Room Preference. Max enrollment of 30
+	CS 329: No Room Preference. Max enrollment of 30
+	CS 339: No Room Preference. Max enrollment of 30
+	CS 342: No Room Preference. Max enrollment of 30
+	CS 355: No Room Preference. Max enrollment of 30
+	CS 374: No Room Preference. Max enrollment of 30
+	CS 376: No Room Preference. Max enrollment of 30
+	CS 378: No Room Preference. Max enrollment of 30
+	CS 386: No Room Preference. Max enrollment of 30
+	CS 399: No Room Preference. Max enrollment of 30
+	CS 407: No Room Preference. Max enrollment of 30
+	CS 420: No Room Preference. Max enrollment of 30
+	CS 425: No Room Preference. Max enrollment of 30
+	CS 449: No Room Preference. Max enrollment of 30
+	CS 454: No Room Preference. Max enrollment of 30
+	CS 489: No Room Preference. Max enrollment of 30
+	CS 491: No Room Preference. Max enrollment of 30
+	CS 514: No Room Preference. Max enrollment of 30
+	CS 522: No Room Preference. Max enrollment of 30
+	CS 524: No Room Preference. Max enrollment of 30
+	CS 530: No Room Preference. Max enrollment of 30
+	CS 560: No Room Preference. Max enrollment of 30
+	CS 586: No Room Preference. Max enrollment of 30
+	CS 591: No Room Preference. Max enrollment of 40
+Faculty:
+	Dr. Able	Can teach: CS 137, CS 284, CS 300,	Preference: None
+	Dr. Brovo	Can teach: CS 329, CS 489, CS 560,	Preference: None
+	Dr. Charlie	Can teach: CS 144, CS 241, CS 326,	Preference: Evening classes only
+	Dr. Dog	Can teach: CS 342, CS 425, CS 586,	Preference: None
+	Dr. Echo	Can teach: CS 143, CS 218, CS 311,	Preference: None
+	Dr. Foxtrot	Can teach: CS 307, CS 491, CS 522,	Preference: Evening classes only
+	Dr. Golf	Can teach: CS 104, CS 233, CS 378,	Preference: None
+	Dr. Hotel	Can teach: CS 376, CS 449, CS 591,	Preference: Evening classes only
+	Dr. India	Can teach: CS 149, CS 219, CS 317,	Preference: None
+	Dr. Juliet	Can teach: CS 399, CS 420, CS 524,	Preference: None
+	Dr. Kilo	Can teach: CS 166, CS 203, CS 355,	Preference: None
+	Dr. Lima	Can teach: CS 374, CS 407, CS 530,	Preference: Evening classes only
+	Dr. Mike	Can teach: CS 178, CS 236, CS 386,	Preference: None
+	Dr. November	Can teach: CS 339, CS 454, CS 514,	Preference: None
+	Dr. Oscar	Can teach: CS 120, CS 280, CS 318,	Preference: None
+Day(s) of the Week: M/W
+	Class Times: [8:00 - 9:20, 9:40 - 11:00, 11:20 - 12:40, 1:00 - 2:20, 2:40 - 4:00, 4:20 - 5:40, 6:00 - 7:20]
+Day(s) of the Week: T/R
+	Class Times: [8:00 - 9:20, 9:40 - 11:00, 11:20 - 12:40, 1:00 - 2:20, 2:40 - 4:00, 4:20 - 5:40, 6:00 - 7:20]
+Available Classrooms:
+Room 'OKT 101' has a maximum capacity of 30
+Room 'OKT 104' has a maximum capacity of 40
+Room 'OKT 105' has a maximum capacity of 60
+Room 'OKT 155' has a maximum capacity of 30
+Room 'OKT 302' has a maximum capacity of 30
+Room 'OKT 306' has a maximum capacity of 20
+Room 'OKT 308' has a maximum capacity of 30
+Room 'OKT 324' has a maximum capacity of 30
+Room 'OKT 326' has a maximum capacity of 30
+Room 'OKT 327' has a maximum capacity of 25
+Room 'OKT 343' has a maximum capacity of 30
+Room 'OKT 344' has a maximum capacity of 30
+------------------------------------------------------
+End of TSV information
+------------------------------------------------------
+
+---------------------------
+Showing CSV information
+---------------------------
+Department: Computer Science
+Location: Technology Hall
+Courses:
+	CS 104: No Room Preference. Max enrollment of 30
+	CS 120: No Room Preference. Max enrollment of 30
+	CS 137: No Room Preference. Max enrollment of 20
+	CS 143: No Room Preference. Max enrollment of 25
+	CS 144: No Room Preference. Max enrollment of 60
+	CS 149: prefers room 133. Max enrollment of 30
+	CS 166: No Room Preference. Max enrollment of 30
+	CS 178: No Room Preference. Max enrollment of 30
+	CS 203: No Room Preference. Max enrollment of 30
+	CS 218: No Room Preference. Max enrollment of 30
+	CS 219: No Room Preference. Max enrollment of 30
+	CS 233: No Room Preference. Max enrollment of 30
+	CS 236: No Room Preference. Max enrollment of 30
+	CS 241: No Room Preference. Max enrollment of 30
+	CS 280: No Room Preference. Max enrollment of 30
+	CS 284: No Room Preference. Max enrollment of 30
+	CS 300: No Room Preference. Max enrollment of 30
+	CS 307: No Room Preference. Max enrollment of 30
+	CS 311: No Room Preference. Max enrollment of 30
+	CS 317: No Room Preference. Max enrollment of 30
+	CS 318: No Room Preference. Max enrollment of 30
+	CS 326: No Room Preference. Max enrollment of 30
+	CS 329: No Room Preference. Max enrollment of 30
+	CS 339: No Room Preference. Max enrollment of 30
+	CS 342: No Room Preference. Max enrollment of 30
+	CS 355: No Room Preference. Max enrollment of 30
+	CS 374: No Room Preference. Max enrollment of 30
+	CS 376: No Room Preference. Max enrollment of 30
+	CS 378: No Room Preference. Max enrollment of 30
+	CS 386: No Room Preference. Max enrollment of 30
+	CS 399: No Room Preference. Max enrollment of 30
+	CS 407: No Room Preference. Max enrollment of 30
+	CS 420: No Room Preference. Max enrollment of 30
+	CS 425: No Room Preference. Max enrollment of 30
+	CS 449: No Room Preference. Max enrollment of 30
+	CS 454: No Room Preference. Max enrollment of 30
+	CS 489: No Room Preference. Max enrollment of 30
+	CS 491: No Room Preference. Max enrollment of 30
+	CS 514: No Room Preference. Max enrollment of 30
+	CS 522: No Room Preference. Max enrollment of 30
+	CS 524: No Room Preference. Max enrollment of 30
+	CS 530: No Room Preference. Max enrollment of 30
+	CS 560: No Room Preference. Max enrollment of 30
+	CS 586: No Room Preference. Max enrollment of 30
+	CS 591: No Room Preference. Max enrollment of 40
+Faculty:
+	Dr. Able	Can teach: CS 137, CS 284, CS 300,	Preference: None
+	Dr. Brovo	Can teach: CS 329, CS 489, CS 560,	Preference: None
+	Dr. Charlie	Can teach: CS 144, CS 241, CS 326,	Preference: Evening classes only
+	Dr. Dog	Can teach: CS 342, CS 425, CS 586,	Preference: None
+	Dr. Echo	Can teach: CS 143, CS 218, CS 311,	Preference: None
+	Dr. Foxtrot	Can teach: CS 307, CS 491, CS 522,	Preference: Evening classes only
+	Dr. Golf	Can teach: CS 104, CS 233, CS 378,	Preference: None
+	Dr. Hotel	Can teach: CS 376, CS 449, CS 591,	Preference: Evening classes only
+	Dr. India	Can teach: CS 149, CS 219, CS 317,	Preference: None
+	Dr. Juliet	Can teach: CS 399, CS 420, CS 524,	Preference: None
+	Dr. Kilo	Can teach: CS 166, CS 203, CS 355,	Preference: None
+	Dr. Lima	Can teach: CS 374, CS 407, CS 530,	Preference: Evening classes only
+	Dr. Mike	Can teach: CS 178, CS 236, CS 386,	Preference: None
+	Dr. November	Can teach: CS 339, CS 454, CS 514,	Preference: None
+	Dr. Oscar	Can teach: CS 120, CS 280, CS 318,	Preference: None
+Day(s) of the Week: M/W
+	Class Times: [8:00 - 9:20, 9:40 - 11:00, 11:20 - 12:40, 1:00 - 2:20, 2:40 - 4:00, 4:20 - 5:40, 6:00 - 7:20]
+Day(s) of the Week: T/R
+	Class Times: [8:00 - 9:20, 9:40 - 11:00, 11:20 - 12:40, 1:00 - 2:20, 2:40 - 4:00, 4:20 - 5:40, 6:00 - 7:20]
+Available Classrooms:
+Room 'OKT 101' has a maximum capacity of 30
+Room 'OKT 104' has a maximum capacity of 40
+Room 'OKT 105' has a maximum capacity of 60
+Room 'OKT 155' has a maximum capacity of 40
+Room 'OKT 302' has a maximum capacity of 30
+Room 'OKT 306' has a maximum capacity of 20
+Room 'OKT 308' has a maximum capacity of 30
+Room 'OKT 324' has a maximum capacity of 30
+Room 'OKT 326' has a maximum capacity of 30
+Room 'OKT 327' has a maximum capacity of 25
+Room 'OKT 343' has a maximum capacity of 30
+Room 'OKT 344' has a maximum capacity of 30
+------------------------------------------------------
+End of CSV information
+------------------------------------------------------
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
